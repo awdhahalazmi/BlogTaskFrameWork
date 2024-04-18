@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model BlogTask.Models.Blog
+
+<form asp-action="AddBlog" method="post">
+    <label for="Url">Blog URL:</label>
+    <input type="text" id="Url" name="Url" required />
+    <div
+    <label for="Name">Title:</label>
+    <input type="text" id="Name" name="Name" required />
+    </div>
+    <button type="submit">Add Blog</button>
+</form>
